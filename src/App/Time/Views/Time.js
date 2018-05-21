@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Time.css';
-import Navbar from '../../Shared/Navbar';
 import Heading from '../Components/Heading';
 import Navigation from '../Components/Navigation';
 import Task from '../Components/Task';
@@ -11,8 +10,7 @@ import WeekSummary from '../Components/WeekSummary';
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
+      <div>        
         <Heading />
         <Navigation />
         <Task />

@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 
 class Heading extends Component {
   render() {
+    var dateNow = new Date();    
+    dateNow = dateNow.toString();
     return (
       <div>
-        Heading
+        <h1>Timesheet</h1>
+        <h3>{dateNow}</h3>
       </div>
     );
   }

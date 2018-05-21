@@ -24,7 +24,7 @@ const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger))
 
 ReactDOM.render(
     <Router history={hist}>    
-        <Provider store={store}>
+        <Provider store={store}>        
         <Switch>
             {indexRoutes.map((prop, key) => {
             return <Route path={prop.path} key={key} component={prop.component} />;
