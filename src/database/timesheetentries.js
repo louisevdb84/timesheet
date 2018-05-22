@@ -8,4 +8,4 @@ timesheetentries.push(new TimesheetEntry(3, 5, "18.05.2018 12:00", "18.05.2018 1
 timesheetentries.push(new TimesheetEntry(4, 6, "18.05.2018 15:00", "18.05.2018 10:00"));
 timesheetentries.push(new TimesheetEntry(5, 1, "18.05.2018 16:00", "18.05.2018 10:00"));
 
-export default timesheetentries;
+export { timesheetentries};
