@@ -1,8 +1,9 @@
 class User {
-    constructor(id, name, surname, userName, password) {
+    constructor(id, name, surname, hourlyRate, userName, password) {
         this.id = id;        
         this.name = name;
-        this.surname = surname;        
+        this.surname = surname;    
+        this.hourlyRate = hourlyRate;
         this.userName = userName;        
         this.password = password;        
     }

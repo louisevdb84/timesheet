@@ -5,6 +5,7 @@ import Navigation from '../Components/Navigation';
 import TaskList from '../Components/TaskList';
 import Timer from '../Components/Timer';
 import WeekSummary from '../Components/WeekSummary';
+import AddEntry from '../Components/AddEntry';
 import Login from '../../Shared/Login';
 import Register from '../../Shared/Register';
 //import PagesHeader from '../../Shared/PagesHeader';
@@ -18,6 +19,7 @@ class App extends Component {
         <Navigation />
         <WeekSummary/>                
         <TaskList />
+        <AddEntry/>
         <Timer />    
         <Login />
         <Register/>
