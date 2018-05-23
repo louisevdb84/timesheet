@@ -5,9 +5,8 @@ class Heading extends Component {
     var dateNow = new Date();    
     dateNow = dateNow.toString();
     return (
-      <div>
-        <h1>Timesheet</h1>
-        <h3>{dateNow}</h3>
+      <div>        
+        <h5>{dateNow}</h5>
       </div>
     );
   }

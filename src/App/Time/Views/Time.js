@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Time.css';
+import '../../../assets/css/style.css';
 import Heading from '../Components/Heading';
 import Navigation from '../Components/Navigation';
 import TaskList from '../Components/TaskList';
@@ -8,19 +8,21 @@ import WeekSummary from '../Components/WeekSummary';
 import AddEntry from '../Components/AddEntry';
 import Login from '../../Shared/Login';
 import Register from '../../Shared/Register';
+import { Container } from "reactstrap";
 //import PagesHeader from '../../Shared/PagesHeader';
 
 class App extends Component {
   render() {
     return (
-      <div>       
-  
-        <Heading />
-        <Navigation />
-        <WeekSummary/>                
-        <TaskList />
-        <AddEntry/>
-        <Timer />    
+      <div className="time-body">       
+        <Container>
+            <Heading />        
+            <Navigation />
+            <WeekSummary/>                
+            <TaskList />
+            <AddEntry/>
+            <Timer />  
+        </Container>  
         <Login />
         <Register/>
       </div>

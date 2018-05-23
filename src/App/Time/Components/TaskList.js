@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { tasks } from '../../../database/tasks'
-import { categories } from '../../../database/categories'
 import { users} from '../../../database/users'
 import findById from '../../../database/helper/findById'
 import Task from './Task';
-import {Card, CardBody} from "reactstrap";
+import {Card, CardBody, Col, Row} from "reactstrap";
 
 class TaskList extends Component {
   render() {    
@@ -16,11 +15,16 @@ class TaskList extends Component {
                     {
                         tasks.map(task => {                        
                         return <Task
-                          task={task}
-                          categoryName={findById(categories, task.categoryId).name} 
+                          task={task}                          
                           userName={findById(users, task.userId).name}/>
                       })
-                    }                        
+                    }    
+                    
+                  <Row>
+                    <Col md={6}></Col>
+                    <Col md={2}>Total</Col>
+                    <Col md={3}>40</Col>
+                  </Row>                    
                     </CardBody>
                   </Card>        
             </div>                
