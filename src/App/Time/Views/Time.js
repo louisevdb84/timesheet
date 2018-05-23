@@ -9,13 +9,14 @@ import AddEntry from '../Components/AddEntry';
 import Login from '../../Shared/Login';
 import Register from '../../Shared/Register';
 import { Container } from "reactstrap";
-//import PagesHeader from '../../Shared/PagesHeader';
+
 
 class App extends Component {
   render() {
     return (
       <div className="time-body">       
         <Container>
+                  
             <Heading />        
             <Navigation />
             <WeekSummary/>                

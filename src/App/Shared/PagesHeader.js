@@ -27,18 +27,18 @@ class PagesHeader extends React.Component {
   }
   // verifies if routeName is the one active (in browser input)
   activeRoute(routeName) {
-    return this.props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
+    console.log(routeName);
+    console.log(this.props);
+    if (this.props.location) {
+      return this.props.location.pathname.indexOf(routeName) > -1 ? "active" : "";  
+    }   
+    
   }
   render() {
     return (
       <Navbar
         expand="lg"
-        className={
-          this.state.isOpen
-            ? "bg-white navbar-absolute"
-            : "navbar-transparent navbar-absolute"
-        }
-      >
+        className="bg-white navbar-absolute pagesHeaderBody">
         <Container>
           <div className="navbar-wrapper">
             <div className="navbar-toggle">
@@ -49,16 +49,11 @@ class PagesHeader extends React.Component {
               </NavbarToggler>
             </div>
             <Link to="/" className="navbar-brand">
-              Now Ui Dashboard Pro - React
+              Timesheet
             </Link>
           </div>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <Link to="/dashboard" className="nav-link">
-                  <i className="now-ui-icons design_bullet-list-67" /> Dashboard
-                </Link>
-              </NavItem>
               {pagesRoutes.map((prop, key) => {
                 if (prop.redirect) return null;
                 return (
@@ -78,3 +73,5 @@ class PagesHeader extends React.Component {
 }
 
 export default PagesHeader;
+
+
