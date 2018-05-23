@@ -6,8 +6,7 @@ import { Button } from "../../../assets/components";
 class Task extends Component {  
   render() {    
     const { name} = this.props.task;
-    const {categoryName, userName } = this.props;
-    console.log(categoryName)
+    const {categoryName, userName } = this.props;    
     return (
       <Row>        
         <Col md={3}>{userName}</Col>                

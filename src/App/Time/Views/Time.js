@@ -5,16 +5,22 @@ import Navigation from '../Components/Navigation';
 import TaskList from '../Components/TaskList';
 import Timer from '../Components/Timer';
 import WeekSummary from '../Components/WeekSummary';
+import Login from '../../Shared/Login';
+import Register from '../../Shared/Register';
+//import PagesHeader from '../../Shared/PagesHeader';
 
 class App extends Component {
   render() {
     return (
-      <div>        
+      <div>       
+  
         <Heading />
-        <WeekSummary/>
-        <Navigation />        
+        <Navigation />
+        <WeekSummary/>                
         <TaskList />
-        <Timer />        
+        <Timer />    
+        <Login />
+        <Register/>
       </div>
     );
   }
